@@ -32,7 +32,7 @@ func main() {
 			}
 
 			msg := make([]byte, msgSize)
-			clientConn.SetReadDeadline(time.Now().Add(10 * time.Second))
+			clientConn.SetReadDeadline(time.Now().Add(20 * time.Second))
 			_, err = clientConn.Read(msg)
 			if err != nil {
 				panic(err)

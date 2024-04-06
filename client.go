@@ -21,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	serverConn.SetWriteDeadline(time.Now().Add(10 * time.Second))
+	serverConn.SetWriteDeadline(time.Now().Add(20 * time.Second))
 	_, err = serverConn.Write([]byte(msg))
 	if err != nil {
 		panic(err)
