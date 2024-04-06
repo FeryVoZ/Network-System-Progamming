@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	serverConn, err := net.DialTimeout("tcp", "localhost:1234", 3*time.Second)
+	serverConn, err := net.DialTimeout("tcp", "localhost:1234", 5*time.Second)
 	if err != nil {
 		panic(err)
 	}
